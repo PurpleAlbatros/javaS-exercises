@@ -1,6 +1,7 @@
 "use strict";
 
 import { fromScratch, calculateAverage } from "./js/fromScratch.js";
+import Person from "./js/Person.js";
 
 function main() {
   console.log("Hello World");
@@ -16,5 +17,8 @@ function main() {
 
   console.log(isHeCooked);
   console.log("he needs some milk fr fr");
+
+  const person = new Person("ukendt person", 300);
+  person.sayHello();
 }
 main();
